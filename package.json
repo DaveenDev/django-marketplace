@@ -1,12 +1,12 @@
 {
   "name": "prj_marketplace",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tailwind watch -i static/tailwind_input.css -o static/tailwind_styles.css --watch",
-    "build": "tailwind build -i static/tailwind_input.css -o static/tailwind_styles.css --minify"
+    "watch": "tailwind watch -i static/tailwind_src.css -o static/tailwind_styles.css --watch",
+    "build": "tailwind build -i static/tailwind_src.css -o static/tailwind_styles.css"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "url": "https://github.com/DaveenDev/django-marketplace/issues"
   },
   "homepage": "https://github.com/DaveenDev/django-marketplace#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.7"
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
   }
 }
