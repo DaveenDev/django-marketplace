@@ -24,3 +24,12 @@ class Product(models.Model):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
+
+class OrderDetail(models.Model):
+    customer_email = models.EmailField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    amount = models.FloatField()
+    stripe_payment_intent = models.CharField(max_length=200)
+    has_paid = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now=True)
+    updated_on = models.DateTimeField(auto_now=True)
