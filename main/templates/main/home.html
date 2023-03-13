@@ -2,11 +2,11 @@
 
 {% block page_content %}
 
-<div class="product-container flex">
+<div class="product-container flex flex-wrap">
 {% for product in products %}
   <div class="product shadow-lg w-1/4 rounded-lg m-10 items-center">
-    <div class="product-image p-5">
-      <img src="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400.png"  
+    <div class="product-image p-5 h-90">
+      <img src="{{ product.image.url}}"  
           alt="">
     </div>
     <div class="product-detail px-5">
