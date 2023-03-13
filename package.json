@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tailwind watch -i static/tailwind_src.css -o static/tailwind_styles.css --watch",
-    "build": "tailwind build -i static/tailwind_src.css -o static/tailwind_styles.css"
+    "build": "tailwind build -i static/tailwind_src.css -o static/tailwind_styles.css",
+    "runserver": "python manage.py runserver",
+    "migrations": "python manage.py makemigrations",
+    "migrate": "python manage.py migrate"
   },
   "repository": {
     "type": "git",

@@ -7,3 +7,10 @@ def home(request):
     return render(request, 'main/home.html', {
         'products': products
     })
+
+def product_detail(request,slug):
+    product = Product.objects.get(slug=slug)
+
+    return render(request, 'main/product_detail.html', {
+        'product': product,
+    })
